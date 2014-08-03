@@ -1,10 +1,5 @@
 require 'httparty'
-require 'multi_json'
 require 'hashie'
-require 'money'
-require 'monetize'
-require 'time'
-require 'securerandom'
 
 module Virtex
   class Client

@@ -111,3 +111,4 @@ bundle exec rspec
 ## Credits
 
 Thanks to @Skizzk for providing an example of correctly authenticating with Virtex
+Thanks to @barmstrong on whose coinbase gem I based this library
