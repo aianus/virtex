@@ -1,0 +1,309 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://cavirtex.com/api2/user/balance.json
+    body:
+      encoding: UTF-8
+      string: token=bzv6qarmw4nocmz4wdtmm5tukn9nvng1&nonce=1407048082998318&signature=7a0e066b06a62cfc5189d20afb1ba1d1d2ab06e1db8914f71fd24eb6370cf3ea
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Sun, 03 Aug 2014 06:41:25 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dc7ab4725531c12e9342d61d2b41188661407048084643; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.cavirtex.com; HttpOnly
+      - sessionid=bb9c19c9b945eedf31d2cc30f2fc98c5; expires=Sun, 03-Aug-2014 10:41:22
+        GMT; httponly; Max-Age=14400; Path=/; secure
+      Last-Modified:
+      - Sun, 03 Aug 2014 06:41:22 GMT
+      Expires:
+      - Sun, 03 Aug 2014 06:41:22 GMT
+      Vary:
+      - Cookie,Accept-Encoding
+      Cache-Control:
+      - max-age=0
+      Cf-Ray:
+      - 15408780dc6f0bc9-HKG
+    body:
+      encoding: UTF-8
+      string: '{"status": "ok", "apirate": 2, "message": "", "balance": {"LTC": 0,
+        "BTC": 0E-9, "CAD": 0.038500000}}'
+    http_version:
+  recorded_at: Sun, 03 Aug 2014 06:41:25 GMT
+- request:
+    method: post
+    uri: https://cavirtex.com/api2/user/transactions.json
+    body:
+      encoding: UTF-8
+      string: currency=BTC&token=bzv6qarmw4nocmz4wdtmm5tukn9nvng1&nonce=1407052130701530&signature=5447d0703224ceaae6618465dbac7b694185179de000d40752061b708d3e0b0f
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Sun, 03 Aug 2014 07:48:56 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d7f2a4cf67af77489e4c4089d2a7d676c1407052136485; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.cavirtex.com; HttpOnly
+      - sessionid=7e590153f8b43b30106637b785912858; expires=Sun, 03-Aug-2014 11:48:53
+        GMT; httponly; Max-Age=14400; Path=/; secure
+      Last-Modified:
+      - Sun, 03 Aug 2014 07:48:53 GMT
+      Expires:
+      - Sun, 03 Aug 2014 07:48:53 GMT
+      Vary:
+      - Cookie,Accept-Encoding
+      Cache-Control:
+      - max-age=0
+      Cf-Ray:
+      - 1540ea6d056b052e-YYZ
+    body:
+      encoding: UTF-8
+      string: '{"status": "ok", "apirate": 1, "message": "", "transactions": [{"currency":
+        "BTC", "reason": "deposit", "total": 0.171200000, "id": 2355387, "processed":
+        1407051921}]}'
+    http_version:
+  recorded_at: Sun, 03 Aug 2014 07:48:57 GMT
+- request:
+    method: post
+    uri: https://cavirtex.com/api2/user/order.json
+    body:
+      encoding: UTF-8
+      string: mode=sell&amount=0.1&price=1000.0&currencypair=BTCCAD&token=bzv6qarmw4nocmz4wdtmm5tukn9nvng1&nonce=1407052399159746&signature=e2d4462cf29ce4d0e4e9122cf81272e9b9fa71723d3e79b8d00fa8e0f27f2fa1
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Sun, 03 Aug 2014 07:53:31 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dc5cbe10953670130feb2e5570d7985cb1407052410931; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.cavirtex.com; HttpOnly
+      - sessionid=36cf235cfaa9581cb7b0eb72e024e3f1; expires=Sun, 03-Aug-2014 11:53:28
+        GMT; httponly; Max-Age=14400; Path=/; secure
+      Last-Modified:
+      - Sun, 03 Aug 2014 07:53:28 GMT
+      Expires:
+      - Sun, 03 Aug 2014 07:53:28 GMT
+      Vary:
+      - Cookie,Accept-Encoding
+      Cache-Control:
+      - max-age=0
+      Cf-Ray:
+      - 1540f1205e4d0528-YYZ
+    body:
+      encoding: UTF-8
+      string: '{"status": "ok", "apirate": 2, "message": "", "order": {"status": "open",
+        "id": 543468}}'
+    http_version:
+  recorded_at: Sun, 03 Aug 2014 07:53:32 GMT
+- request:
+    method: post
+    uri: https://cavirtex.com/api2/user/order_cancel.json
+    body:
+      encoding: UTF-8
+      string: id=543468&token=bzv6qarmw4nocmz4wdtmm5tukn9nvng1&nonce=1407052456858152&signature=cba571fea974418fea652ac6c698f241723d9aa7622fed906fd699e50f7e3da2
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Sun, 03 Aug 2014 07:54:29 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d6bc11d8c18572860ebd4624c89c4fa201407052462131; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.cavirtex.com; HttpOnly
+      - sessionid=7b5cc98aab3b9f1e91b73b2ed3412d6b; expires=Sun, 03-Aug-2014 11:54:26
+        GMT; httponly; Max-Age=14400; Path=/; secure
+      Last-Modified:
+      - Sun, 03 Aug 2014 07:54:26 GMT
+      Expires:
+      - Sun, 03 Aug 2014 07:54:26 GMT
+      Vary:
+      - Cookie,Accept-Encoding
+      Cache-Control:
+      - max-age=0
+      Cf-Ray:
+      - 1540f2605db1053a-YYZ
+    body:
+      encoding: UTF-8
+      string: '{"status": "ok", "apirate": 3, "message": "", "id": 543468}'
+    http_version:
+  recorded_at: Sun, 03 Aug 2014 07:54:30 GMT
+- request:
+    method: post
+    uri: https://cavirtex.com/api2/user/orders.json
+    body:
+      encoding: UTF-8
+      string: token=bzv6qarmw4nocmz4wdtmm5tukn9nvng1&nonce=1407052609966936&signature=8e6296434a8ec0b31a867a346d0e842ab774eec4a9d474d9a96a92b81ce1def8
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Sun, 03 Aug 2014 07:56:53 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dbcf42e9c89809e7b5236b0bc4217fe211407052613068; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.cavirtex.com; HttpOnly
+      - sessionid=ba85c15f4af23edd5598e55e49cbd932; expires=Sun, 03-Aug-2014 11:56:50
+        GMT; httponly; Max-Age=14400; Path=/; secure
+      Last-Modified:
+      - Sun, 03 Aug 2014 07:56:50 GMT
+      Expires:
+      - Sun, 03 Aug 2014 07:56:50 GMT
+      Vary:
+      - Cookie,Accept-Encoding
+      Cache-Control:
+      - max-age=0
+      Cf-Ray:
+      - 1540f60fafe40528-YYZ
+    body:
+      encoding: UTF-8
+      string: '{"status": "ok", "apirate": 4, "message": "", "orders": [{"status":
+        "canceled", "requested": 1000.000000000, "created": 1407052408, "price": 1000.000000000,
+        "completed": 1407052466, "remaining": 0.100000000, "currency": "BTC", "amount":
+        0.100000000, "mode": "sell", "id": 543468, "with_currency": "CAD"}]}'
+    http_version:
+  recorded_at: Sun, 03 Aug 2014 07:56:53 GMT
+- request:
+    method: post
+    uri: https://cavirtex.com/api2/user/trades.json
+    body:
+      encoding: UTF-8
+      string: token=bzv6qarmw4nocmz4wdtmm5tukn9nvng1&nonce=1407053048063873&signature=44b24561c9314e0a34135df2fb41795d64d5723748fa86cc7f45f76b31c87747
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Sun, 03 Aug 2014 08:04:14 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=db50882cf5c3a616bff9d5deb0672afaf1407053053643; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.cavirtex.com; HttpOnly
+      - sessionid=81e192d540510a5b0d44ae6ed03dbe89; expires=Sun, 03-Aug-2014 12:04:10
+        GMT; httponly; Max-Age=14400; Path=/; secure
+      Last-Modified:
+      - Sun, 03 Aug 2014 08:04:10 GMT
+      Expires:
+      - Sun, 03 Aug 2014 08:04:10 GMT
+      Vary:
+      - Cookie,Accept-Encoding
+      Cache-Control:
+      - max-age=0
+      Cf-Ray:
+      - 154100d14146052e-YYZ
+    body:
+      encoding: UTF-8
+      string: '{"status": "ok", "apirate": 4, "message": "", "trades": [{"rate": 632.071010000,
+        "for_currency_amount": 0.632000000, "trade_currency_amount": 0.001000000,
+        "date": 1407053027.0, "amount": 0.632000000, "price": 0.00158, "oid": 543503,
+        "id": 202617, "trade_currency": "BTC", "for_currency": "CAD"}]}'
+    http_version:
+  recorded_at: Sun, 03 Aug 2014 08:04:14 GMT
+- request:
+    method: post
+    uri: https://cavirtex.com/api2/user/withdraw.json
+    body:
+      encoding: UTF-8
+      string: amount=0.01&currency=BTC&address=1DWYffTxhXgBtbswMjNViw9nNCvx3Drpvn&token=bzv6qarmw4nocmz4wdtmm5tukn9nvng1&nonce=1407053975001896&signature=7682f10e1bfd901e42f162610aeb61ae9aa3105e977f36526b879b5767a540a3
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Sun, 03 Aug 2014 08:19:57 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d01b57ddf0eafb2511009b744d612b7691407053978507; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.cavirtex.com; HttpOnly
+      - sessionid=f4b9ba0eb85734a1869569270590da3a; expires=Sun, 03-Aug-2014 12:19:54
+        GMT; httponly; Max-Age=14400; Path=/; secure
+      Last-Modified:
+      - Sun, 03 Aug 2014 08:19:54 GMT
+      Expires:
+      - Sun, 03 Aug 2014 08:19:54 GMT
+      Vary:
+      - Cookie,Accept-Encoding
+      Cache-Control:
+      - max-age=0
+      Cf-Ray:
+      - 15411765ac250528-YYZ
+    body:
+      encoding: UTF-8
+      string: '{"status": "ok", "apirate": 2, "message": "", "result": {"currency":
+        "BTC", "reason": "withdrawal", "fee": 0, "user": "aianus", "wallet": "1DWYffTxhXgBtbswMjNViw9nNCvx3Drpvn",
+        "withdrawalfee": -0.0005, "amount": -0.01, "publictransactionid": "1592b009ebeb1bdc2b53a0ffe1a2ae7a56ef4fe011f235a14fa1d7ba085b3c8a"}}'
+    http_version:
+  recorded_at: Sun, 03 Aug 2014 08:19:58 GMT
+recorded_with: VCR 2.9.2

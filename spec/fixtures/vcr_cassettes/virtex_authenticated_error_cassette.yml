@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://cavirtex.com/api2/user/order.json
+    body:
+      encoding: UTF-8
+      string: mode=sell&amount=1.0&price=1000.0&currencypair=BTCCAD&token=bzv6qarmw4nocmz4wdtmm5tukn9nvng1&nonce=1407049060166375&signature=25b1448751b7224f2ea5cdb9f27b336b78b6bf6b1ab5524e1808a9d80d37f912
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Sun, 03 Aug 2014 06:57:44 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d8adba6b24148fb720ab187fd61f1d8021407049064253; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.cavirtex.com; HttpOnly
+      - sessionid=4ef9632b241b7f1764c142b463723dee; expires=Sun, 03-Aug-2014 10:57:41
+        GMT; httponly; Max-Age=14400; Path=/; secure
+      Last-Modified:
+      - Sun, 03 Aug 2014 06:57:41 GMT
+      Expires:
+      - Sun, 03 Aug 2014 06:57:41 GMT
+      Vary:
+      - Cookie,Accept-Encoding
+      Cache-Control:
+      - max-age=0
+      Cf-Ray:
+      - 15409f6b9a620528-YYZ
+    body:
+      encoding: UTF-8
+      string: '{"status": "error", "apirate": 2, "message": "Not sufficient funds"}'
+    http_version: 
+  recorded_at: Sun, 03 Aug 2014 06:57:45 GMT
+recorded_with: VCR 2.9.2
