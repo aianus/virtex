@@ -59,7 +59,7 @@ describe Virtex::Client do
   context "Authenticated" do
 
     before(:each) do
-      @virtex = Virtex::Client.new(ENV['VIRTEX_API_KEY'], ENV['VIRTEX_API_SECRET'])
+      @virtex = Virtex::Client.new('VIRTEX_API_KEY', 'VIRTEX_API_SECRET')
     end
 
     it "can retrieve the balance" do

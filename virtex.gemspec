@@ -1,7 +1,11 @@
 # coding: utf-8
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require 'virtex/version'
+
 Gem::Specification.new do |gem|
   gem.name          = 'virtex'
-  gem.version       = '1.0.1'
+  gem.version       = Virtex::VERSION
   gem.authors       = ['aianus']
   gem.email         = ['hire@alexianus.com']
   gem.summary       = %q{A thin wrapper around the CaVirtex API}
